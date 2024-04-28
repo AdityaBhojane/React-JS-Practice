@@ -3,13 +3,14 @@ import './App.css'
 
 function App() {
   // hook
-  let [count, setCount] = useState(5)
+  const [count, setCount] = useState(5)
 
  function addCounter(){
-      setCount(++count)
+      setCount(preCount => preCount + 1)
+      setCount(preCount => preCount + 1)
   }
  function removeCounter(){
-  if(count > 0) setCount(--count)
+  if(count > 0) setCount(count - 1)
   }
 
   return (
