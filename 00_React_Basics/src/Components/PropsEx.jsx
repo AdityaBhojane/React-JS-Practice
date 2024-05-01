@@ -1,5 +1,7 @@
 
-function PropsExample({newName,btnText,btnText2="don't click"}){
+function PropsExample({newName,btnText,btnText2="don't click",arr,obj}){
+    console.log(arr,obj)
+
     return (
         <>
             <h2>{newName}</h2>
