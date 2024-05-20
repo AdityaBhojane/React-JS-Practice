@@ -1,5 +1,7 @@
 import { memo,useState,useCallback,useEffect } from 'react'
 import './App.css'
+import MoreCallbacks from './components/MoreCallbacks'
+import UseRef from './components/useRef'
 
 
 function App() {
@@ -13,8 +15,10 @@ function App() {
 
   return (
     <>
-      <NewComponent/>
-      <button onClick={increment}>click {count}</button>
+      {/* <NewComponent/> */}
+      {/* <button onClick={increment}>click {count}</button> */}
+      {/* <MoreCallbacks/> */}
+      <UseRef/>
     </>
   )
 
@@ -28,6 +32,8 @@ let NewComponent = memo(()=>{
     </>
   )
 })
+
+
 
 
 
