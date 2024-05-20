@@ -1,7 +1,7 @@
 export default function Contact(){
     return (
         <>
-            <h1>Contact</h1>
+            <h1 className='text-2xl'>Contact Page</h1>
         </>
     )
 }
