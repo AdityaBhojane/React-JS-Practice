@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-export default function CountryCard({ name, flag, population, region, capital }) {
+export default function CountryCard({ name, flag, population, region, capital}) {
   return (
     <div className='w-[200px] h-[300px] border'>
       <div className="w-[200px] h-[200px]">
