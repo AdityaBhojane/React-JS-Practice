@@ -17,6 +17,7 @@ function StateEffectCallbackHook() {
     console.log(count) // memoization old original value
     return setCount((count)=> count + 1)
   },[])
+
   // let updateCount = useCallback(() => setCount(count + 1),[count])
   // count added to prevent unnecessary re-renders 
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet,useNavigate } from "react-router-dom";
+import { NavLink, Outlet,useNavigate } from "react-router-dom";
 
 export default function Layout(){
     const navigate = useNavigate()
@@ -7,9 +7,9 @@ export default function Layout(){
         <>
             <header>
                 <p className="text-yellow-500 m-5 uppercase">Server side routing (using Navigation Hook)</p>
-                <button onClick={()=>navigate("/")} className="border border-white px-4 py-1 rounded-2xl m-4">Go to Home Page</button>
-                <button onClick={()=>navigate("/About")} className="border border-white px-4 py-1 rounded-2xl m-4">Go to About Page</button>
-                <button onClick={()=>navigate("/Contact")} className="border border-white px-4 py-1 rounded-2xl m-4">Go to Contact Page</button>
+                <span onClick={()=>navigate("/")} className='border border-white px-4 py-1 rounded-2xl mx-4 cursor-pointer'>Go to Home Page</span>
+                <span onClick={()=>navigate("/About")} className='border border-white px-4 py-1 rounded-2xl mx-4 cursor-pointer'>Go to About Page</span>
+                <span onClick={()=>navigate("/Contact")} className='border border-white px-4 py-1 rounded-2xl mx-4 cursor-pointer'>Go to Contact Page</span>
                 <Outlet/>
             </header>    
         </>
